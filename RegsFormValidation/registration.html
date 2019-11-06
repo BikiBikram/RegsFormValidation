@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+             <link rel="stylesheet" href="registation.css">
+             <script src="javascript.js"></script>
+             
+             
+      
+            
+
+    </head>
+    <body>
+     
+            <form  onsubmit="validation()" style="max-width:500px;margin:auto">
+                    <h2>Register Form</h2>
+                    <div class="input-container">
+                      <i class="fa fa-user icon"></i>
+                      <input id="username" class="input-field" type="text" placeholder="Username" autocomplete="off" >
+                      <span id="spantext" style="font-weight: bold; color: red"></span>
+                    </div>
+
+                    <div class="input-container">
+                      
+                      <input id="mobileno" class="input-field" type="text" placeholder="Enter Your Mobile Number..."autocomplete="off" >
+                        <span id="mobile" class="text-danger"></span>
+                      </div>
+                  
+                    <div class="input-container">
+                      <i class="fa fa-envelope icon"></i>
+                      <input id="txtEmail" name="email" class="input-field" type="text" placeholder="Email" name="email" autocomplete="off" >
+                      <span id="email" style="font-weight: bold; color: red"></span>
+                    </div>
+                    
+                    
+                    <div class="input-container">
+                      <i class="fa fa-key icon"></i>
+                      <input id="psw" value="" name="psw" class="input-field" type="password" placeholder="Enter Your Password.."autocomplete="off" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/" title=" password between 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character" required >
+                      <span id="password" style="font-weight: bold; color: red"></span>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input id="conpsw" name="password2" value="" class="input-field" type="password" placeholder="Confirm Your Password.." autocomplete="off">
+                        <span id="confirmpassword" style="font-weight: bold; color: red"></span>
+                      </div>
+                  
+                  
+                    <button type="submit" value="submit" class="btn" onclick="return validation()">Register</button>
+                      
+                
+                          
+
+
+                  </form>
+                    
+
+    </body>
+</html>
